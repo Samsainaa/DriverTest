@@ -177,79 +177,71 @@
       <ul class="options">
         <li><label><input type="radio" name="q8" onclick="checkAnswer(this, true, 'q8')"> Урд, хойд гэрэл, дохионы гэрэл, тоормосны гэрэл</label></li>
         <li><label><input type="radio" name="q8" onclick="checkAnswer(this, false, 'q8')"> Зөвхөн тоормосны гэрэл байхад болно</label></li>
-        <li><label><input type="radio" name="q8" onclick="checkAnswer(this, false, 'q8')"> Ямар ч гэрэл байх албагүй</label></li>
+        <li><label><input type="radio" name="q8" onclick="checkAnswer(this, false, 'q8')"> Гэрэлгүй машин явж болно</label></li>
       </ul>
       <div class="explanation" id="exp-q8"></div>
     </div>
 
     <div class="question" id="q9">
-      <h3>9. Дараах зүйлсийн аль нь галын аюултай вэ?</h3>
+      <h3>9. Аюултай газраас явж болох уу?</h3>
       <ul class="options">
-        <li><label><input type="radio" name="q9" onclick="checkAnswer(this, false, 'q9')"> Ус асгарах</label></li>
-        <li><label><input type="radio" name="q9" onclick="checkAnswer(this, true, 'q9')"> Шатахуун гоожих</label></li>
-        <li><label><input type="radio" name="q9" onclick="checkAnswer(this, false, 'q9')"> Шавар шүрших</label></li>
+        <li><label><input type="radio" name="q9" onclick="checkAnswer(this, false, 'q9')"> Үгүй</label></li>
+        <li><label><input type="radio" name="q9" onclick="checkAnswer(this, true, 'q9')"> Тийм, хамгаалалтын хэрэгсэл хэрэглэх ёстой</label></li>
+        <li><label><input type="radio" name="q9" onclick="checkAnswer(this, false, 'q9')"> Гэрэлтүүлэгтэй байх ёстой</label></li>
       </ul>
       <div class="explanation" id="exp-q9"></div>
     </div>
 
     <div class="question" id="q10">
-      <h3>10. Шөнийн цагт гэрэл асахгүй бол юу хийх вэ?</h3>
+      <h3>10. Гаднаас зочин оруулахдаа ямар зүйлсийг анхаарах ёстой вэ?</h3>
       <ul class="options">
-        <li><label><input type="radio" name="q10" onclick="checkAnswer(this, false, 'q10')"> Зүгээр л удаан явна</label></li>
-        <li><label><input type="radio" name="q10" onclick="checkAnswer(this, true, 'q10')"> Тээврийн хэрэгслийг хөдөлгөөнд оролцуулахыг хориглоно</label></li>
-        <li><label><input type="radio" name="q10" onclick="checkAnswer(this, false, 'q10')"> Хамт явж байгаа машинтай зэрэгцэж явна</label></li>
+        <li><label><input type="radio" name="q10" onclick="checkAnswer(this, true, 'q10')"> Аюулгүй байдлын үйлчилгээ зөвшөөрөх ёстой</label></li>
+        <li><label><input type="radio" name="q10" onclick="checkAnswer(this, false, 'q10')"> Хамгийн түрүүнд оруулах хэрэгтэй</label></li>
+        <li><label><input type="radio" name="q10" onclick="checkAnswer(this, false, 'q10')"> Хэрэгсэл бүрэн байвал болно</label></li>
       </ul>
       <div class="explanation" id="exp-q10"></div>
     </div>
-
-    <div id="finalMessage">
-      <h3>Тест дууслаа!</h3>
-      <p id="finalScore"></p>
-      <button onclick="location.reload()">Дахин эхлэх</button>
-      <button onclick="window.scrollTo({top:0, behavior:'smooth'})">Хариултуудыг дахин харах</button>
-    </div>
-
-    <script>
-      let score = 0;
-      let totalQuestions = 10;
-      let answered = {};
-
-      function checkAnswer(radio, isCorrect, qid) {
-        if (answered[qid]) return;
-        answered[qid] = true;
-
-        const options = radio.closest('ul').querySelectorAll('input');
-        options.forEach(input => {
-          input.disabled = true;
-          const label = input.closest('label');
-          if (input.checked && isCorrect) label.classList.add('correct');
-          if (input.checked && !isCorrect) label.classList.add('incorrect');
-        });
-
-        const exp = document.getElementById('exp-' + qid);
-        exp.textContent = isCorrect ? "Зөв хариулт!" : "Буруу хариулт. Дахин шалгана уу.";
-
-        if (isCorrect) score++;
-
-        updateScore();
-      }
-
-      function updateScore() {
-        const scoreDisplay = document.getElementById('score');
-        scoreDisplay.textContent = `Одоогийн оноо: ${score} / ${totalQuestions}`;
-        if (Object.keys(answered).length === totalQuestions) {
-          showFinalMessage();
-        }
-      }
-
-      function showFinalMessage() {
-        const finalMsg = document.getElementById("finalMessage");
-        const finalScore = document.getElementById("finalScore");
-        finalScore.textContent = `Таны эцсийн оноо: ${score} / ${totalQuestions}`;
-        finalMsg.style.display = "block";
-        window.scrollTo({ top: finalMsg.offsetTop, behavior: 'smooth' });
-      }
-    </script>
   </div>
+  
+  <div id="finalMessage">
+    <h2>Танд амжилт хүсч байна!</h2>
+    <p>Дараагийн удаа илүү сайн хариулна гэдэгт итгэлтэй байна.</p>
+    <button onclick="restartQuiz()">Дахин эхлэх</button>
+  </div>
+
+  <script>
+    let score = 0;
+    function checkAnswer(option, isCorrect, questionId) {
+      const explanation = document.getElementById(`exp-${questionId}`);
+      if (isCorrect) {
+        score++;
+        explanation.innerHTML = "Зөв хариулт!";
+        explanation.classList.add('correct');
+      } else {
+        explanation.innerHTML = "Буруу хариулт.";
+        explanation.classList.add('incorrect');
+      }
+      document.getElementById('score').innerText = `Одоогийн оноо: ${score} / 10`;
+      setTimeout(() => {
+        if (questionId === 'q10') {
+          document.getElementById('finalMessage').style.display = 'block';
+        }
+      }, 500);
+    }
+    function restartQuiz() {
+      score = 0;
+      document.getElementById('score').innerText = `Одоогийн оноо: 0 / 10`;
+      const explanations = document.querySelectorAll('.explanation');
+      explanations.forEach(explanation => {
+        explanation.innerHTML = '';
+        explanation.classList.remove('correct', 'incorrect');
+      });
+      document.getElementById('finalMessage').style.display = 'none';
+      const radios = document.querySelectorAll('input[type="radio"]');
+      radios.forEach(radio => {
+        radio.checked = false;
+      });
+    }
+  </script>
 </body>
 </html>
