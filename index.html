@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Машины Тест</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Category Selection Page -->
+  <div id="categoryPage" class="category-page">
+    <h1>Ангилал сонгоно уу</h1>
+    <div class="category-grid" id="categoryGrid">
+      <!-- Categories will be generated here -->
+    </div>
+  </div>
+
+  <!-- ✅ Quiz Page -->
+  <div id="quizPage" class="hidden">
+    <div class="navbar sticky">
+      <button onclick="backToCategories()">← Ангилал руу буцах</button>
+      <div id="categoryTitle" class="category-title"></div>
+      <div id="progressText" class="progress-text">Асуулт: 0 / 0</div>
+      <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+    </div>
+
+    <div class="container">
+      <form id="quizForm"></form>
+
+      <div id="final-result" class="hidden">
+        <h2 id="scoreText"></h2>
+        <button id="resetBtn" onclick="restartQuiz()">Шинээр эхлэх</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
