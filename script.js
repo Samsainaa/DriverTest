@@ -37,8 +37,7 @@ window.allQuestions = {
       "text": "How do you perform a safe turn?",
       "options": [
         "60 km/h",
-        "80 km/h",
-        NaN
+        "80 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -49,7 +48,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -95,7 +95,9 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry",
+        "Pedestrian Crossing"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -106,7 +108,8 @@ window.allQuestions = {
       "options": [
         "Proceed with caution",
         "Stop",
-        "Accelerate"
+        "Accelerate",
+        "Call police"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Where can you park?",
@@ -117,7 +120,8 @@ window.allQuestions = {
       "options": [
         "When clear",
         "In traffic",
-        "On curves"
+        "On curves",
+        "Near intersections"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -151,8 +155,7 @@ window.allQuestions = {
       "text": "What should you do at a red light?",
       "options": [
         "60 km/h",
-        "80 km/h",
-        NaN
+        "80 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do at a red light?",
@@ -173,8 +176,7 @@ window.allQuestions = {
       "text": "What should you check before driving?",
       "options": [
         "Use signal",
-        "Speed up",
-        NaN
+        "Speed up"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you check before driving?",
@@ -185,7 +187,8 @@ window.allQuestions = {
       "options": [
         "Use signal",
         "Speed up",
-        "Ignore signs"
+        "Ignore signs",
+        "Check mirrors"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -196,7 +199,8 @@ window.allQuestions = {
       "options": [
         "Anywhere",
         "In marked zones",
-        "On corners"
+        "On corners",
+        "Next to fire hydrant"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -242,7 +246,9 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry",
+        "Pedestrian Crossing"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -253,7 +259,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Who has the right of way?",
@@ -263,8 +270,7 @@ window.allQuestions = {
       "text": "What should you check before driving?",
       "options": [
         "Use headlights",
-        "Drive fast",
-        NaN
+        "Drive fast"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you check before driving?",
@@ -275,7 +281,8 @@ window.allQuestions = {
       "options": [
         "Proceed with caution",
         "Stop",
-        "Accelerate"
+        "Accelerate",
+        "Call police"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -286,7 +293,8 @@ window.allQuestions = {
       "options": [
         "When clear",
         "In traffic",
-        "On curves"
+        "On curves",
+        "Near intersections"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -297,7 +305,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -321,7 +330,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -331,8 +341,7 @@ window.allQuestions = {
       "text": "What should you check before driving?",
       "options": [
         "60 km/h",
-        "80 km/h",
-        NaN
+        "80 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you check before driving?",
@@ -343,7 +352,8 @@ window.allQuestions = {
       "options": [
         "Anywhere",
         "In marked zones",
-        "On corners"
+        "On corners",
+        "Next to fire hydrant"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -367,7 +377,8 @@ window.allQuestions = {
       "options": [
         "60 km/h",
         "80 km/h",
-        "100 km/h"
+        "100 km/h",
+        "120 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -378,7 +389,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -388,8 +400,7 @@ window.allQuestions = {
       "text": "When is it safe to overtake?",
       "options": [
         "When clear",
-        "In traffic",
-        NaN
+        "In traffic"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -400,7 +411,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -422,7 +434,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -444,7 +457,8 @@ window.allQuestions = {
       "options": [
         "Driver",
         "Cyclist",
-        "Pedestrian"
+        "Pedestrian",
+        "Bus"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -467,8 +481,7 @@ window.allQuestions = {
       "text": "What should you check before driving?",
       "options": [
         "Driver",
-        "Cyclist",
-        NaN
+        "Cyclist"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you check before driving?",
@@ -478,8 +491,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "Proceed with caution",
-        "Stop",
-        NaN
+        "Stop"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -489,8 +501,7 @@ window.allQuestions = {
       "text": "What is the speed limit here?",
       "options": [
         "Fuel",
-        "Brakes",
-        NaN
+        "Brakes"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -501,7 +512,8 @@ window.allQuestions = {
       "options": [
         "Anywhere",
         "In marked zones",
-        "On corners"
+        "On corners",
+        "Next to fire hydrant"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -512,7 +524,8 @@ window.allQuestions = {
       "options": [
         "When clear",
         "In traffic",
-        "On curves"
+        "On curves",
+        "Near intersections"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -522,8 +535,7 @@ window.allQuestions = {
       "text": "Where can you park?",
       "options": [
         "Wait",
-        "Go",
-        NaN
+        "Go"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Where can you park?",
@@ -534,7 +546,8 @@ window.allQuestions = {
       "options": [
         "Fuel",
         "Brakes",
-        "Mirrors"
+        "Mirrors",
+        "All of the above"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Where can you park?",
@@ -558,7 +571,8 @@ window.allQuestions = {
       "options": [
         "Driver",
         "Cyclist",
-        "Pedestrian"
+        "Pedestrian",
+        "Bus"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -579,8 +593,7 @@ window.allQuestions = {
       "text": "What is the speed limit here?",
       "options": [
         "60 km/h",
-        "80 km/h",
-        NaN
+        "80 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -602,7 +615,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Where can you park?",
@@ -612,8 +626,7 @@ window.allQuestions = {
       "text": "What should you do in foggy conditions?",
       "options": [
         "When clear",
-        "In traffic",
-        NaN
+        "In traffic"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -623,8 +636,7 @@ window.allQuestions = {
       "text": "When is it safe to overtake?",
       "options": [
         "Stop",
-        "Yield",
-        NaN
+        "Yield"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -634,8 +646,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "Use signal",
-        "Speed up",
-        NaN
+        "Speed up"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -714,7 +725,8 @@ window.allQuestions = {
       "options": [
         "Wait",
         "Go",
-        "Slow Down"
+        "Slow Down",
+        "Turn Left"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -749,7 +761,8 @@ window.allQuestions = {
       "options": [
         "60 km/h",
         "80 km/h",
-        "100 km/h"
+        "100 km/h",
+        "120 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -782,7 +795,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you check before driving?",
@@ -795,7 +809,8 @@ window.allQuestions = {
       "options": [
         "Wait",
         "Go",
-        "Slow Down"
+        "Slow Down",
+        "Turn Left"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -806,7 +821,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -827,8 +843,7 @@ window.allQuestions = {
       "text": "How do you perform a safe turn?",
       "options": [
         "Stop",
-        "Yield",
-        NaN
+        "Yield"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -838,8 +853,7 @@ window.allQuestions = {
       "text": "When is it safe to overtake?",
       "options": [
         "Wait",
-        "Go",
-        NaN
+        "Go"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -850,7 +864,8 @@ window.allQuestions = {
       "options": [
         "Fuel",
         "Brakes",
-        "Mirrors"
+        "Mirrors",
+        "All of the above"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -861,7 +876,8 @@ window.allQuestions = {
       "options": [
         "Driver",
         "Cyclist",
-        "Pedestrian"
+        "Pedestrian",
+        "Bus"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -871,8 +887,7 @@ window.allQuestions = {
       "text": "What should you do at a red light?",
       "options": [
         "Driver",
-        "Cyclist",
-        NaN
+        "Cyclist"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do at a red light?",
@@ -883,7 +898,8 @@ window.allQuestions = {
       "options": [
         "Fuel",
         "Brakes",
-        "Mirrors"
+        "Mirrors",
+        "All of the above"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -895,8 +911,7 @@ window.allQuestions = {
       "text": "What should you do in foggy conditions?",
       "options": [
         "Anywhere",
-        "In marked zones",
-        NaN
+        "In marked zones"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -917,8 +932,7 @@ window.allQuestions = {
       "text": "What does this sign mean?",
       "options": [
         "Use signal",
-        "Speed up",
-        NaN
+        "Speed up"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -963,8 +977,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "60 km/h",
-        "80 km/h",
-        NaN
+        "80 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1008,7 +1021,8 @@ window.allQuestions = {
       "options": [
         "When clear",
         "In traffic",
-        "On curves"
+        "On curves",
+        "Near intersections"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -1019,7 +1033,8 @@ window.allQuestions = {
       "options": [
         "Driver",
         "Cyclist",
-        "Pedestrian"
+        "Pedestrian",
+        "Bus"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Who has the right of way?",
@@ -1031,8 +1046,7 @@ window.allQuestions = {
       "text": "What does this sign mean?",
       "options": [
         "Use headlights",
-        "Drive fast",
-        NaN
+        "Drive fast"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -1042,8 +1056,7 @@ window.allQuestions = {
       "text": "What should you do in foggy conditions?",
       "options": [
         "60 km/h",
-        "80 km/h",
-        NaN
+        "80 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -1065,7 +1078,8 @@ window.allQuestions = {
       "options": [
         "60 km/h",
         "80 km/h",
-        "100 km/h"
+        "100 km/h",
+        "120 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -1111,7 +1125,8 @@ window.allQuestions = {
       "options": [
         "Anywhere",
         "In marked zones",
-        "On corners"
+        "On corners",
+        "Next to fire hydrant"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -1133,7 +1148,8 @@ window.allQuestions = {
       "options": [
         "60 km/h",
         "80 km/h",
-        "100 km/h"
+        "100 km/h",
+        "120 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -1143,8 +1159,7 @@ window.allQuestions = {
       "text": "What should you do in foggy conditions?",
       "options": [
         "Use headlights",
-        "Drive fast",
-        NaN
+        "Drive fast"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -1155,7 +1170,8 @@ window.allQuestions = {
       "options": [
         "Wait",
         "Go",
-        "Slow Down"
+        "Slow Down",
+        "Turn Left"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1166,7 +1182,8 @@ window.allQuestions = {
       "options": [
         "Driver",
         "Cyclist",
-        "Pedestrian"
+        "Pedestrian",
+        "Bus"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -1177,7 +1194,9 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry",
+        "Pedestrian Crossing"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do at a red light?",
@@ -1189,8 +1208,7 @@ window.allQuestions = {
       "text": "What should you do in foggy conditions?",
       "options": [
         "Use signal",
-        "Speed up",
-        NaN
+        "Speed up"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -1201,7 +1219,8 @@ window.allQuestions = {
       "options": [
         "Fuel",
         "Brakes",
-        "Mirrors"
+        "Mirrors",
+        "All of the above"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1211,8 +1230,7 @@ window.allQuestions = {
       "text": "Who has the right of way?",
       "options": [
         "Use signal",
-        "Speed up",
-        NaN
+        "Speed up"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Who has the right of way?",
@@ -1222,8 +1240,7 @@ window.allQuestions = {
       "text": "What should you do at a red light?",
       "options": [
         "Fuel",
-        "Brakes",
-        NaN
+        "Brakes"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do at a red light?",
@@ -1233,8 +1250,7 @@ window.allQuestions = {
       "text": "What is the speed limit here?",
       "options": [
         "Fuel",
-        "Brakes",
-        NaN
+        "Brakes"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1244,8 +1260,7 @@ window.allQuestions = {
       "text": "What is the speed limit here?",
       "options": [
         "Fuel",
-        "Brakes",
-        NaN
+        "Brakes"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1266,8 +1281,7 @@ window.allQuestions = {
       "text": "How do you perform a safe turn?",
       "options": [
         "Driver",
-        "Cyclist",
-        NaN
+        "Cyclist"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -1277,8 +1291,7 @@ window.allQuestions = {
       "text": "What should you check before driving?",
       "options": [
         "Proceed with caution",
-        "Stop",
-        NaN
+        "Stop"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you check before driving?",
@@ -1289,7 +1302,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do at a red light?",
@@ -1301,8 +1315,7 @@ window.allQuestions = {
       "text": "When is it safe to overtake?",
       "options": [
         "Use signal",
-        "Speed up",
-        NaN
+        "Speed up"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -1324,7 +1337,9 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry",
+        "Pedestrian Crossing"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Where can you park?",
@@ -1335,7 +1350,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1345,8 +1361,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "Use headlights",
-        "Drive fast",
-        NaN
+        "Drive fast"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1356,8 +1371,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "When clear",
-        "In traffic",
-        NaN
+        "In traffic"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1368,7 +1382,9 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry",
+        "Pedestrian Crossing"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you check before driving?",
@@ -1379,7 +1395,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -1392,7 +1409,8 @@ window.allQuestions = {
       "options": [
         "Wait",
         "Go",
-        "Slow Down"
+        "Slow Down",
+        "Turn Left"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Who has the right of way?",
@@ -1413,8 +1431,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "When clear",
-        "In traffic",
-        NaN
+        "In traffic"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1424,8 +1441,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "Proceed with caution",
-        "Stop",
-        NaN
+        "Stop"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1436,7 +1452,8 @@ window.allQuestions = {
       "options": [
         "Anywhere",
         "In marked zones",
-        "On corners"
+        "On corners",
+        "Next to fire hydrant"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -1460,7 +1477,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -1470,8 +1488,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "60 km/h",
-        "80 km/h",
-        NaN
+        "80 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1492,8 +1509,7 @@ window.allQuestions = {
       "text": "What should you do at a red light?",
       "options": [
         "When clear",
-        "In traffic",
-        NaN
+        "In traffic"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do at a red light?",
@@ -1504,7 +1520,8 @@ window.allQuestions = {
       "options": [
         "60 km/h",
         "80 km/h",
-        "100 km/h"
+        "100 km/h",
+        "120 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -1515,7 +1532,8 @@ window.allQuestions = {
       "options": [
         "Fuel",
         "Brakes",
-        "Mirrors"
+        "Mirrors",
+        "All of the above"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -1547,8 +1565,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "60 km/h",
-        "80 km/h",
-        NaN
+        "80 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1560,8 +1577,7 @@ window.allQuestions = {
       "text": "What is the speed limit here?",
       "options": [
         "60 km/h",
-        "80 km/h",
-        NaN
+        "80 km/h"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1571,8 +1587,7 @@ window.allQuestions = {
       "text": "Where can you park?",
       "options": [
         "Use headlights",
-        "Drive fast",
-        NaN
+        "Drive fast"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Where can you park?",
@@ -1594,7 +1609,8 @@ window.allQuestions = {
       "options": [
         "Anywhere",
         "In marked zones",
-        "On corners"
+        "On corners",
+        "Next to fire hydrant"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -1605,7 +1621,8 @@ window.allQuestions = {
       "options": [
         "Proceed with caution",
         "Stop",
-        "Accelerate"
+        "Accelerate",
+        "Call police"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1616,7 +1633,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1627,7 +1645,8 @@ window.allQuestions = {
       "options": [
         "Wait",
         "Go",
-        "Slow Down"
+        "Slow Down",
+        "Turn Left"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -1638,7 +1657,8 @@ window.allQuestions = {
       "options": [
         "Wait",
         "Go",
-        "Slow Down"
+        "Slow Down",
+        "Turn Left"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Who has the right of way?",
@@ -1673,7 +1693,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -1683,8 +1704,7 @@ window.allQuestions = {
       "text": "What does a flashing yellow light mean?",
       "options": [
         "Wait",
-        "Go",
-        NaN
+        "Go"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1695,7 +1715,8 @@ window.allQuestions = {
       "options": [
         "Fuel",
         "Brakes",
-        "Mirrors"
+        "Mirrors",
+        "All of the above"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1706,7 +1727,8 @@ window.allQuestions = {
       "options": [
         "Anywhere",
         "In marked zones",
-        "On corners"
+        "On corners",
+        "Next to fire hydrant"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -1728,7 +1750,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do at a red light?",
@@ -1738,8 +1761,7 @@ window.allQuestions = {
       "text": "What is the speed limit here?",
       "options": [
         "Anywhere",
-        "In marked zones",
-        NaN
+        "In marked zones"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1752,7 +1774,9 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry",
+        "Pedestrian Crossing"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1763,7 +1787,8 @@ window.allQuestions = {
       "options": [
         "Use headlights",
         "Drive fast",
-        "Stop immediately"
+        "Stop immediately",
+        "Open windows"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: When is it safe to overtake?",
@@ -1773,8 +1798,7 @@ window.allQuestions = {
       "text": "What is the speed limit here?",
       "options": [
         "Fuel",
-        "Brakes",
-        NaN
+        "Brakes"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1817,8 +1841,7 @@ window.allQuestions = {
       "text": "How do you perform a safe turn?",
       "options": [
         "When clear",
-        "In traffic",
-        NaN
+        "In traffic"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -1831,7 +1854,8 @@ window.allQuestions = {
       "options": [
         "Anywhere",
         "In marked zones",
-        "On corners"
+        "On corners",
+        "Next to fire hydrant"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -1841,8 +1865,7 @@ window.allQuestions = {
       "text": "What should you do at a red light?",
       "options": [
         "When clear",
-        "In traffic",
-        NaN
+        "In traffic"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do at a red light?",
@@ -1853,7 +1876,8 @@ window.allQuestions = {
       "options": [
         "When clear",
         "In traffic",
-        "On curves"
+        "On curves",
+        "Near intersections"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does this sign mean?",
@@ -1864,7 +1888,8 @@ window.allQuestions = {
       "options": [
         "Proceed with caution",
         "Stop",
-        "Accelerate"
+        "Accelerate",
+        "Call police"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Where can you park?",
@@ -1886,7 +1911,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What does a flashing yellow light mean?",
@@ -1897,7 +1923,8 @@ window.allQuestions = {
       "options": [
         "Stop",
         "Yield",
-        "Merge"
+        "Merge",
+        "No Entry"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What is the speed limit here?",
@@ -1907,8 +1934,7 @@ window.allQuestions = {
       "text": "How do you perform a safe turn?",
       "options": [
         "Proceed with caution",
-        "Stop",
-        NaN
+        "Stop"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: How do you perform a safe turn?",
@@ -1943,7 +1969,8 @@ window.allQuestions = {
       "options": [
         "Use signal",
         "Speed up",
-        "Ignore signs"
+        "Ignore signs",
+        "Check mirrors"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do in foggy conditions?",
@@ -1953,8 +1980,7 @@ window.allQuestions = {
       "text": "What should you do at a red light?",
       "options": [
         "When clear",
-        "In traffic",
-        NaN
+        "In traffic"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: What should you do at a red light?",
@@ -1964,8 +1990,7 @@ window.allQuestions = {
       "text": "Who has the right of way?",
       "options": [
         "Wait",
-        "Go",
-        NaN
+        "Go"
       ],
       "answer": "1",
       "explanation": "This is an explanation for: Who has the right of way?",
@@ -2010,6 +2035,7 @@ function startCategory(categoryName) {
   document.getElementById('final-result').classList.add('hidden');
 
   renderQuestions();
+  window.scrollTo(0, 0); // Always scroll to top
 }
 
 function renderQuestions() {
