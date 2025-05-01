@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOGIN</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <style>
-    /* Overall page styling */
     body {
       margin: 0;
       padding: 0;
@@ -14,7 +20,6 @@
       justify-content: center;
     }
 
-    /* Main login container */
     .container {
       background: #ffffff;
       border-radius: 16px;
@@ -24,20 +29,17 @@
       text-align: center;
     }
 
-    /* Title */
     h2 {
       margin-bottom: 20px;
       font-size: 24px;
       font-weight: 700;
     }
 
-    /* Input wrappers */
     .input-box {
       position: relative;
       margin-bottom: 20px;
     }
 
-    /* Icons inside input */
     .input-box i {
       position: absolute;
       left: 15px;
@@ -47,7 +49,6 @@
       font-size: 16px;
     }
 
-    /* Input fields */
     .input-box input {
       width: 80%;
       padding: 12px 16px 12px 40px;
@@ -57,7 +58,6 @@
       font-size: 14px;
     }
 
-    /* Show password checkbox */
     .show-password {
       display: flex;
       align-items: center;
@@ -70,7 +70,6 @@
       margin-right: 6px;
     }
 
-    /* Login button */
     button {
       width: 100%;
       padding: 12px;
@@ -88,21 +87,16 @@
       transform: scale(1.02);
     }
 
-    /* Error message */
     #message {
       color: red;
       font-size: 13px;
       margin-top: 10px;
     }
   </style>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LOGIN</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <div class="login-container">
+
+  <div class="container">
     <h2>LOGIN</h2>
 
     <div class="input-box">
@@ -133,16 +127,11 @@
       "Dorj": "Dorj123"
     };
 
-    if (localStorage.getItem("loggedInUser")) {
-      window.location.href = "quiz.html";
-    }
-
     function signIn() {
       const username = document.getElementById("username").value.trim();
       const password = document.getElementById("password").value.trim();
 
       if (users[username] && users[username] === password) {
-        localStorage.setItem("loggedInUser", username);
         window.location.href = "quiz.html";
       } else {
         document.getElementById("message").innerText = "Invalid username or password.";
@@ -150,9 +139,10 @@
     }
 
     function togglePasswordVisibility() {
-      const pw = document.getElementById("password");
-      pw.type = pw.type === "password" ? "text" : "password";
+      const passwordInput = document.getElementById("password");
+      passwordInput.type = passwordInput.type === "password" ? "text" : "password";
     }
   </script>
+
 </body>
 </html>
