@@ -8,19 +8,22 @@
 </head>
 <body>
 
+  <!-- 🚪 Logout button -->
   <button onclick="logout()" style="margin: 10px; background: #f55; color: white; padding: 10px 20px; border: none; border-radius: 6px;">Гарах</button>
   <script>
     function logout() {
       localStorage.removeItem("loggedInUser");
-      window.location.href = "index.html"
+      window.location.href = "index.html";
     }
   </script>
 
+  <!-- ✅ Category Selection -->
   <div id="categoryPage" class="category-page">
     <h1>Жолооны тест</h1>
     <div class="category-grid" id="categoryGrid"></div>
   </div>
 
+  <!-- ✅ Quiz Page -->
   <div id="quizPage" class="hidden">
     <div class="navbar sticky">
       <button onclick="backToCategories()">← Ангилал руу буцах</button>
