@@ -9,50 +9,55 @@ body {
   display: none;
 }
 
-/* Category selection page */
+/* Category page layout */
 .category-page {
-  padding: 30px;
+  padding: 30px 20px;
   text-align: center;
 }
 
 .category-page h1 {
-  margin-bottom: 20px;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .category-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding: 0 20px 20px;
+  gap: 12px;
 }
 
 .category {
-  background: #007BFF;
-  color: white;
-  padding: 16px;
+  background: white; /* light yellow */
+  color: #333;
+  padding: 7px 5px;
   border-radius: 10px;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   cursor: pointer;
   font-weight: bold;
   text-align: center;
+  font-size: 18px;
   transition: background 0.3s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
 .category:hover {
-  background: #0056b3;
+  background: #bcbdf7;
 }
 
 .category small {
   display: block;
   font-weight: normal;
   font-size: 14px;
-  margin-top: 6px;
-  color: #e0e0e0;
+  margin-top: 4px;
+  color: #666;
 }
 
-/* Quiz navigation and layout */
+/* Quiz interface */
 .navbar {
   background: white;
   position: sticky;
@@ -71,19 +76,20 @@ body {
   padding: 6px 12px;
   font-size: 14px;
   border: none;
-  background: #007BFF;
+  background: #696cf5;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .navbar button:hover {
-  background: #0056b3;
+  background: #5a5dd4;
 }
 
 .category-title {
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 18px;
 }
 
 /* Progress bar */
@@ -93,13 +99,13 @@ body {
   height: 10px;
   border-radius: 5px;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .progress-fill {
   height: 100%;
   width: 0%;
-  background: #007BFF;
+  background: #696cf5;
   transition: width 0.3s ease;
 }
 
@@ -116,29 +122,29 @@ body {
   background: white;
 }
 
-/* Question layout */
+/* Question styling */
 .question {
+  background: #f0f0f0;
   padding: 15px;
   margin-bottom: 30px;
   border-radius: 10px;
-  background: #f9f9f9;
 }
 
 .question-image {
   width: 100%;
   margin: 10px 0;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 /* Options */
 .option {
   padding: 10px;
   margin: 5px 0;
-  border-radius: 6px;
+  border-radius: 5px;
   background: white;
   cursor: pointer;
   transition: background 0.2s ease;
-  border: 1px solid #ccc;
+  border: 0px solid white;
 }
 
 .option:hover {
@@ -155,7 +161,7 @@ body {
   color: black;
 }
 
-/* Explanation below incorrect answers */
+/* Explanations */
 .explanation {
   margin-top: 10px;
   font-style: italic;
@@ -169,7 +175,7 @@ body {
 }
 
 #resetBtn {
-  background-color: #007BFF;
+  background-color: #696cf5;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -180,5 +186,5 @@ body {
 }
 
 #resetBtn:hover {
-  background-color: #0056b3;
+  background-color: #575ad1;
 }
