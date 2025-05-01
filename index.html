@@ -4,90 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Машины Тест</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f0f0f0;
-    }
-    .navbar {
-      background: #007BFF;
-      padding: 10px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      text-align: center;
-    }
-    .navbar a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .quiz-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #fff;
-    }
-    .question {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 20px;
-    }
-    .question h3 {
-      color: #333;
-    }
-    .options {
-      list-style: none;
-      padding: 0;
-    }
-    .options li {
-      margin-bottom: 10px;
-    }
-    .options input[type="radio"] {
-      margin-right: 10px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 10px;
-    }
-    .correct {
-      background-color: #d4edda;
-    }
-    .incorrect {
-      background-color: #f8d7da;
-    }
-    .explanation {
-      margin-top: 10px;
-      font-style: italic;
-      color: #555;
-    }
-    #score {
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-      padding: 10px;
-      background: #e2e3e5;
-      margin-bottom: 20px;
-    }
-    #finalMessage {
-      display: none;
-      background: #fff3cd;
-      border: 1px solid #ffeeba;
-      padding: 20px;
-      margin-top: 30px;
-      text-align: center;
-    }
-    #finalMessage button {
-      padding: 10px 20px;
-      margin: 10px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+  
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div class="navbar">
@@ -121,7 +40,7 @@
 
     <div class="question" id="q3">
       <h3>3. Тэмдэг юуг анхааруулах вэ?</h3>
-      <img src="https://content.ikon.mn/bt/images/2/5.jpeg" alt="Замын тэмдэг">
+      <img src="aaa96079-f872-4e05-ba08-b4b1f677de2e.png" alt="Замын тэмдэг">
       <ul class="options">
         <li><label><input type="radio" name="q3" onclick="checkAnswer(this, false, 'q3')"> Замын хажигтралтай хэсэг ойрхон байгаа</label></li>
         <li><label><input type="radio" name="q3" onclick="checkAnswer(this, false, 'q3')"> Замын ноёнтон ба бохирдсон хэсэг ойрхон байгаа</label></li>
@@ -206,7 +125,7 @@
   <div id="finalMessage">
     <h2>Танд амжилт хүсч байна!</h2>
     <p>Дараагийн удаа илүү сайн хариулна гэдэгт итгэлтэй байна.</p>
-    <button onclick="restartQuiz()">Дахин эхлэх</button>
+    
   </div>
 
   <script>
@@ -228,14 +147,7 @@
         }
       }, 500);
     }
-    function restartQuiz() {
-      score = 0;
-      document.getElementById('score').innerText = `Одоогийн оноо: 0 / 10`;
-      const explanations = document.querySelectorAll('.explanation');
-      explanations.forEach(explanation => {
-        explanation.innerHTML = '';
-        explanation.classList.remove('correct', 'incorrect');
-      });
+    );
       document.getElementById('finalMessage').style.display = 'none';
       const radios = document.querySelectorAll('input[type="radio"]');
       radios.forEach(radio => {
