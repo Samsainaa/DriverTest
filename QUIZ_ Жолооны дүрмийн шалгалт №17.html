@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Машины Тест</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+    .navbar {
+      background: #007BFF;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .quiz-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+    }
+    .question {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+    .question h3 {
+      color: #333;
+    }
+    .options {
+      list-style: none;
+      padding: 0;
+    }
+    .options li {
+      margin-bottom: 10px;
+    }
+    .options input[type="radio"] {
+      margin-right: 10px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+    .correct {
+      background-color: #d4edda;
+    }
+    .incorrect {
+      background-color: #f8d7da;
+    }
+    .explanation {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+    }
+    #score {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      background: #e2e3e5;
+      margin-bottom: 20px;
+    }
+    #finalMessage {
+      display: none;
+      background: #fff3cd;
+      border: 1px solid #ffeeba;
+      padding: 20px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    #finalMessage button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#q1">1</a><a href="#q2">2</a><a href="#q3">3</a><a href="#q4">4</a><a href="#q5">5</a>
+    <a href="#q6">6</a><a href="#q7">7</a><a href="#q8">8</a><a href="#q9">9</a><a href="#q10">10</a>
+  </div>
+
+  <div class="quiz-container">
+    <div id="score">Одоогийн оноо: 0 / 10</div>
+
+    <!-- Questions -->
+    <div class="question" id="q1">
+      <h3>1. “Бүх жин” гэж юу вэ?</h3>
+      <ul class="options">
+        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, false, 'q1')"> Зөвхөн тээврийн хэрэгслийн өөрийн жин</label></li>
+        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, false, 'q1')"> Тээврийн хэрэгслийн тухайн үеийн жин</label></li>
+        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, true, 'q1')"> Тээврийн хэрэгслийн техникийн тодорхойлолтоор тогтоосон өөрийн болон ачаа, жолооч, зорчигчийн нийт жин</label></li>
+      </ul>
+      <div class="explanation" id="exp-q1"></div>
+    </div>
+
+    <div class="question" id="q2">
+      <h3>2. Аль тохиолдолд хөдөлгөөнийг үргэлжлүүлэхийг хориглох вэ?</h3>
+      <ul class="options">
+        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, false, 'q2')"> “Чиргүүлтэй тээврийн хэрэгсэл” таних тэмдэггүй</label></li>
+        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, false, 'q2')"> Арын харах тольгүй</label></li>
+        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, true, 'q2')"> Чиргүүлийн холбоос эвдэрсэн</label></li>
+      </ul>
+      <div class="explanation" id="exp-q2"></div>
+    </div>
+
+    <div class="question" id="q3">
+      <h3>3. Тэмдэг юуг анхааруулах вэ?</h3>
+      <img src="aaa96079-f872-4e05-ba08-b4b1f677de2e.png" alt="Замын тэмдэг">
+      <ul class="options">
+        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, false, 'q3')"> Замын хажигтралтай хэсэг ойрхон байгаа</label></li>
+        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, false, 'q3')"> Замын ноёнтон ба бохирдсон хэсэг ойрхон байгаа</label></li>
+        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, true, 'q3')"> Дугуйн дороос хайрга чулуу үсэрч болзошгүй замын хэсэг ойрхон байгаа</label></li>
+      </ul>
+      <div class="explanation" id="exp-q3"></div>
+    </div>
+
+    <!-- Sample filler questions -->
+    <div class="question" id="q4">
+      <h3>4. Галын хор хаана байрлах ёстой вэ?</h3>
+      <ul class="options">
+        <li><label><input type="radio" name="q4" onclick="checkAnswer(this, true, 'q4')"> Жолооч амархан хүрч болох газарт</label></li>
+        <li><label><input type="radio" name="q4" onclick="checkAnswer(this, false, 'q4')"> Машины арын тээшинд</label></li>
+        <li><label><input type="radio" name="q4" onclick="checkAnswer(this, false, 'q4')"> Суудлын доорх нууц газарт</label></li>
+      </ul>
+      <div class="explanation" id="exp-q4"></div>
+    </div>
+
+    <div class="question" id="q5">
+      <h3>5. Аюулгүйн бүсийг хэрэглэх шаардлагатай юу?</h3>
+      <ul class="options">
+        <li><label><input type="radio" name="q5" onclick="checkAnswer(this, false, 'q5')"> Зөвхөн урд талын зорчигч</label></li>
+        <li><label><input type="radio" name="q5" onclick="checkAnswer(this, true, 'q5')"> Бүх сууж яваа зорчигчид</label></li>
+        <li><label><input type="radio" name="q5" onclick="checkAnswer(this, false, 'q5')"> Хүүхдүүдэд л хэрэгтэй</label></li>
+      </ul>
+      <div class="explanation" id="exp-q5"></div>
+    </div>
+
+    <div class="question" id="q6">
+      <h3>6. Нарийн гудамжинд зогсоол хийхдээ юуг анхаарах вэ?</h3>
+      <ul class="options">
+        <li><label><input type="radio" name="q6" onclick="checkAnswer(this, true, 'q6')"> Бусад машины хөдөлгөөнд саад болохгүй байх</label></li>
+        <li><label><input type="radio" name="q6" onclick="checkAnswer(this, false, 'q6')"> Гол нь зам дээр буухгүй л бол болно</label></li>
+        <li><label><input type="radio" name="q6" onclick="checkAnswer(this, false, 'q6')"> Автобусны буудалд тавьж болно</label></li>
+      </ul>
+      <div class="explanation" id="exp-q6"></div>
+    </div>
+
+    <div class="question" id="q7">
+      <h3>7. Энэ тэмдэг юуг зааж байна вэ?</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Mn-road-sign-3.24.2.svg/1200px-Mn-road-sign-3.24.2.svg.png" alt="Зогсох хориотой тэмдэг">
+      <ul class="options">
+        <li><label><input type="radio" name="q7" onclick="checkAnswer(this, false, 'q7')"> Зогсож болно</label></li>
+        <li><label><input type="radio" name="q7" onclick="checkAnswer(this, true, 'q7')"> Зогсохыг хориглоно</label></li>
+        <li><label><input type="radio" name="q7" onclick="checkAnswer(this, false, 'q7')"> Зорчихыг хориглоно</label></li>
+      </ul>
+      <div class="explanation" id="exp-q7"></div>
+    </div>
+
+    <div class="question" id="q8">
+      <h3>8. Тээврийн хэрэгсэлд ямар гэрэл байх ёстой вэ?</h3>
+      <ul class="options">
+        <li><label><input type="radio" name="q8" onclick="checkAnswer(this, true, 'q8')"> Урд, хойд гэрэл, дохионы гэрэл, тоормосны гэрэл</label></li>
+        <li><label><input type="radio" name="q8" onclick="checkAnswer(this, false, 'q8')"> Зөвхөн тоормосны гэрэл байхад болно</label></li>
+        <li><label><input type="radio" name="q8" onclick="checkAnswer(this, false, 'q8')"> Ямар ч гэрэл байх албагүй</label></li>
+      </ul>
+      <div class="explanation" id="exp-q8"></div>
+    </div>
+
+    <div class="question" id="q9">
+      <h3>9. Дараах зүйлсийн аль нь галын аюултай вэ?</h3>
+      <ul class="options">
+        <li><label><input type="radio" name="q9" onclick="checkAnswer(this, false, 'q9')"> Ус асгарах</label></li>
+        <li><label><input type="radio" name="q9" onclick="checkAnswer(this, true, 'q9')"> Шатахуун гоожих</label></li>
+        <li><label><input type="radio" name="q9" onclick="checkAnswer(this, false, 'q9')"> Шавар шүрших</label></li>
+      </ul>
+      <div class="explanation" id="exp-q9"></div>
+    </div>
+
+    <div class="question" id="q10">
+      <h3>10. Шөнийн цагт гэрэл асахгүй бол юу хийх вэ?</h3>
+      <ul class="options">
+        <li><label><input type="radio" name="q10" onclick="checkAnswer(this, false, 'q10')"> Зүгээр л удаан явна</label></li>
+        <li><label><input type="radio" name="q10" onclick="checkAnswer(this, true, 'q10')"> Тээврийн хэрэгслийг хөдөлгөөнд оролцуулахыг хориглоно</label></li>
+        <li><label><input type="radio" name="q10" onclick="checkAnswer(this, false, 'q10')"> Хамт явж байгаа машинтай зэрэгцэж явна</label></li>
+      </ul>
+      <div class="explanation" id="exp-q10"></div>
+    </div>
+
+    <div id="finalMessage">
+      <h3>Тест дууслаа!</h3>
+      <p id="finalScore"></p>
+      <button onclick="location.reload()">Дахин эхлэх</button>
+      <button onclick="window.scrollTo({top:0, behavior:'smooth'})">Хариултуудыг дахин харах</button>
+    </div>
+
+    <script>
+      let score = 0;
+      let totalQuestions = 10;
+      let answered = {};
+
+      function checkAnswer(radio, isCorrect, qid) {
+        if (answered[qid]) return;
+        answered[qid] = true;
+
+        const options = radio.closest('ul').querySelectorAll('input');
+        options.forEach(input => {
+          input.disabled = true;
+          const label = input.closest('label');
+          if (input.checked && isCorrect) label.classList.add('correct');
+          if (input.checked && !isCorrect) label.classList.add('incorrect');
+        });
+
+        const exp = document.getElementById('exp-' + qid);
+        exp.textContent = isCorrect ? "Зөв хариулт!" : "Буруу хариулт. Дахин шалгана уу.";
+
+        if (isCorrect) score++;
+
+        updateScore();
+      }
+
+      function updateScore() {
+        const scoreDisplay = document.getElementById('score');
+        scoreDisplay.textContent = `Одоогийн оноо: ${score} / ${totalQuestions}`;
+        if (Object.keys(answered).length === totalQuestions) {
+          showFinalMessage();
+        }
+      }
+
+      function showFinalMessage() {
+        const finalMsg = document.getElementById("finalMessage");
+        const finalScore = document.getElementById("finalScore");
+        finalScore.textContent = `Таны эцсийн оноо: ${score} / ${totalQuestions}`;
+        finalMsg.style.display = "block";
+        window.scrollTo({ top: finalMsg.offsetTop, behavior: 'smooth' });
+      }
+    </script>
+  </div>
+</body>
+</html>
